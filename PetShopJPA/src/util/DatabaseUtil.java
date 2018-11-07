@@ -11,7 +11,6 @@ import model.PersonalMedical;
 import model.Programare;
 
 public class DatabaseUtil {
-	
 	public static EntityManagerFactory entityManagerFactory;
 	public static EntityManager entityManager;
 
@@ -23,6 +22,7 @@ public class DatabaseUtil {
 	public void saveAnimal(Animal animal) {
 		entityManager.persist(animal);
 	}
+
 	public void deleteAnimal(Animal animal) {
 		Animal currentAnimal =animal;
 		if (!entityManager.contains(animal)) {
@@ -35,20 +35,22 @@ public class DatabaseUtil {
 	public void saveProgramare(Programare programare) {
 		entityManager.persist(programare);
 	}
+	
+
 	public void deleteProgramare(Programare programare) {
 		entityManager.remove(programare);
 	}
-	
 	public void savePersonalMedical(PersonalMedical personalMedical) {
 		entityManager.persist(personalMedical);
 	}
+
 	public void deletePersonalMedical(PersonalMedical personalMedical) {
 		entityManager.remove(personalMedical);
 	}
-	
 	public void startTransaction() {
 		entityManager.getTransaction().begin();
 	}
+
 	public void commitTransaction() {
 		entityManager.getTransaction().commit();
 	}

@@ -32,9 +32,9 @@ public class Main {
 		 dbUtil.commitTransaction();	
 		 */
 		 
-		 prog.setIdProgramare(4);
-		 prog.setIdAnimalFK(3);
-		 prog.setIdPersonalMedicalFK(3);
+		 prog.setIdProgramare(6);
+		 prog.setIdAnimalFK(1);
+		 prog.setIdPersonalMedicalFK(2);
 		 
 		// SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		// java.util.Date date1 = dateFormat.parse("2012-12-13 14:54:30");
@@ -53,7 +53,7 @@ public class Main {
 		 dbUtil.startTransaction();
 		 dbUtil.saveAnimal(b);
 		 dbUtil.commitTransaction();	  
-		
+	
 		 Animal a = new Animal ();
 		
 		 a.setIdAnimal(13);
@@ -64,7 +64,8 @@ public class Main {
 		 dbUtil.commitTransaction();
 		 */
 		 dbUtil.printAllAnimalsFromDB();
+		 dbUtil.printAllProgramariFromDB();
+		 dbUtil.printAllPersonalMedicalFromDB();
 		 dbUtil.closeEntityManager();
 	}
-
 }

@@ -8,13 +8,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.NamedQuery;
 
-/**
- * The persistent class for the prtsonalMedical database table.
- * @Entity - ii spui ca mapezi tabela personalMedical. se pune deasupra clasei
- * toate variabilele reprezinta coloanele tabelei personalMedical
- * @Id - cheia primara a tabelei personalMedical
- * @GeneratedValue - idPersonalMedical va fi generat automat
- */
+
 @Entity
 @NamedQuery(name="PersonalMedical.findAll", query="SELECT personalMedical FROM PersonalMedical personalMedical")
 public class PersonalMedical implements Serializable{
