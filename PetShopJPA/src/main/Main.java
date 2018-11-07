@@ -32,7 +32,7 @@ public class Main {
 		 dbUtil.commitTransaction();	
 		 */
 		 
-		 prog.setIdProgramare(3);
+		 prog.setIdProgramare(4);
 		 prog.setIdAnimalFK(3);
 		 prog.setIdPersonalMedicalFK(3);
 		 
@@ -40,7 +40,7 @@ public class Main {
 		// java.util.Date date1 = dateFormat.parse("2012-12-13 14:54:30");
 		 //prog.setDate1(2012-12-12 20:20:20);
 		 
-		 prog.setDataProgramare(".dec.20118");
+		 prog.setDataProgramare("20.dec.20118");
 		 prog.setOraProgramare("15:30:00");
 		 dbUtil.setUp();
 		 dbUtil.startTransaction();

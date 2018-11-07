@@ -30,7 +30,7 @@ public class Programare implements Serializable{
 	private int idPersonalMedicalFK;
 	private String dataProgramare;
 	private String oraProgramare;
-	private String date1;
+	
 	
 	//SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 	
@@ -41,14 +41,7 @@ public class Programare implements Serializable{
 	}
 
 
-	public String getDate1() {
-		return date1;
-	}
-
-
-	public void setDate1(String string) {
-		this.date1 = string;
-	}
+	
 
 
 	public void setIdProgramare(int idProgramare) {
